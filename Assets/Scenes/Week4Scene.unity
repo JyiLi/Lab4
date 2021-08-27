@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   studentNumber: 13644493
-  bandReached: 0
+  bandReached: 2
 --- !u!1 &681248591
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 913179433}
   - component: {fileID: 913179434}
   m_Layer: 0
-  m_Name: LoadAssets
+  m_Name: LoadManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,6 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redObj: {fileID: 4173058257382955157, guid: 61803d778807b4eee89156ef7bb41528, type: 3}
+  blueObj: {fileID: 3433508330170545023, guid: 900d2ae4793d24246aa47e871b3defc1, type: 3}
 --- !u!1 &1153005952
 GameObject:
   m_ObjectHideFlags: 0
