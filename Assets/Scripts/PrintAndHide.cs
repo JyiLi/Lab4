@@ -5,7 +5,7 @@ using UnityEngine;
 public class PrintAndHide : MonoBehaviour
 {
 
-    int i;
+    int i,r;
 
     public Renderer rend;
 
@@ -13,6 +13,7 @@ public class PrintAndHide : MonoBehaviour
     void Start()
     {
         i = 3;
+        r = Random.Range(200, 251);
     }
 
     // Update is called once per frame
@@ -20,5 +21,11 @@ public class PrintAndHide : MonoBehaviour
     {
         i++;
         Debug.Log(gameObject.name+":"+i);
+
+        if (i == 100 && GameObject.FindGameObjectWithTag("Red")!=null)
+            GameObject.FindWithTag("Red").SetActive(false);
+
+        if (i == r)
+            GameObject.FindWithTag("Blue").GetComponent<Renderer>().enabled = false;
     }
 }
